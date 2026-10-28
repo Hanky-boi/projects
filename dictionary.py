@@ -76,8 +76,8 @@ def shop():
                 print("Invalid input. Please enter 'y' or 'n'.")
             print("Current cart:")
             for item in cart:
-                print(f"{item['name']} - ${item['price']:.2f}")
-            print("Total cart value:", f"${sum(item['price'] for item in cart):.2f}")
+                print(f"{item['name']} - ${item['price']}")
+            print("Total cart value:", f"${sum(item['price'] for item in cart)}")
             checkout = input("Do you want to checkout? (y/n) ")
             if checkout.lower() == "y":
                 print("Thank you for shopping!")
