@@ -1,5 +1,5 @@
 import random
-def number_guessing_game():
+def numgus():
     number = random.randint(1, 10)
     guesslist = []
     attempts = 1
@@ -14,4 +14,4 @@ def number_guessing_game():
             print("Too high pal")
             attempts += 1
     print(f"gg, u guessed the number in {attempts} attempts and used numbers {guesslist}")
-number_guessing_game()
+numgus()
