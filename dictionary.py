@@ -80,7 +80,9 @@ def shop():
             print("Total cart value:", f"${sum(item['price'] for item in cart)}")
             checkout = input("Do you want to checkout? (y/n) ")
             if checkout.lower() == "y":
-                print("Thank 4 monie")
+                total = sum(item['price'] for item in cart)
+                print(f"ur total is: ${total}")
+                print("Thank 4 monies lol")
                 cart.clear()
                 break
             elif checkout.lower() == "n":
