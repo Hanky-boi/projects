@@ -62,9 +62,9 @@ def shop():
                     print(index+1, item["name"])
             show_items(local_corner_store)
             x = int(input("Which item number do you want to buy? : \n"))
-            print(local_corner_store[x-1]["name"])
-            print(local_corner_store[x-1]["price"])
-            print(local_corner_store[x-1]["desc"])
+            print("\n" + local_corner_store[x-1]["name"] + "\n")
+            print(str(local_corner_store[x-1]["price"]) + "\n")
+            print(local_corner_store[x-1]["desc"] + "\n")
             ask = input("Do you want to add this item to your cart? (y/n) ")
             if ask.lower() == "y":
                 selected_item = local_corner_store[x-1]
